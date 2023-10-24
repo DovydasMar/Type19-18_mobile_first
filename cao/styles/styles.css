@@ -1,0 +1,24 @@
+html {
+  --primary: #7474db;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary);
+  padding: 0.4em 0.8em;
+  align-items: center;
+}
+header > a {
+  font-weight: bold;
+}
+header a span {
+  color: black;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+img {
+  width: 15px;
+}
