@@ -109,4 +109,28 @@ header {
     font-size: 18px;
     /* font-weight: 600; */
   }
+  .submenu {
+    display: none;
+  }
+  .submenu {
+    background-color: white;
+    color: #222;
+    padding: 10px;
+    position: absolute;
+    top: calc(100% + 25px);
+    min-width: 120px;
+  }
+  .sub-link {
+    padding: 0.3em 0.6em;
+    display: block;
+    border-bottom: 1px solid gray;
+  }
+  .has-children:hover + .submenu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-list > li {
+    position: relative;
+  }
 }
