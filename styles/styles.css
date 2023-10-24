@@ -6,10 +6,13 @@ header {
   top: 10px;
   left: 10px;
   z-index: 10;
+  color: white;
 }
-.main-nav {
+.main-nav,
+.logo {
   display: none;
 }
+
 .burger-menu-btn {
   border: 1px solid rgba(115, 115, 115, 63%);
   background-color: rgba(115, 115, 115, 63%);
@@ -28,6 +31,7 @@ header {
   background-attachment: fixed;
   /* z-index: 1; */
 }
+
 .hero::after {
   position: absolute;
   content: "";
@@ -78,4 +82,31 @@ header {
 .btn:active {
   outline: 2px solid white;
   background-color: #f02206;
+}
+@media screen and (min-width: 738px) {
+  .main-nav,
+  .logo {
+    display: block;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 28px 34px;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    padding: 0.5em 1em;
+    font-size: 18px;
+    /* font-weight: 600; */
+  }
 }
