@@ -4,6 +4,12 @@ html {
   --secondary: #fff;
   --secondary2: #e4e4e4;
 }
+.container {
+  width: 95%;
+}
+.container {
+  margin: 50px 0;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -22,7 +28,7 @@ span {
   justify-content: space-between;
   gap: 15px;
 }
-img {
+li img {
   width: 15px;
 }
 .hero {
@@ -52,4 +58,66 @@ img {
   color: var(--secondary);
   border: 1px solid var(--primary);
   box-shadow: 2px 2px 5px 5px #6c6ccf;
+}
+/* main */
+.main .container > * {
+  padding-bottom: 30px;
+}
+.main h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+/* services */
+.services {
+  background-color: var(--secondary2);
+}
+.services h2 {
+  margin: 50px 0;
+  text-align: center;
+}
+.service-box img {
+  width: 47px;
+}
+.service-box i {
+  font-size: 25px;
+}
+.service-box {
+  text-align: center;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.box-img {
+  padding: 0.4em 0.4em;
+  background-color: var(--primary);
+}
+.service-box h4,
+.service-box p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* tours */
+.tour-card h5 {
+  margin: 10px 20px;
+  font-size: 18px;
+}
+.where {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+.where > p::before {
+  content: "\f279";
+  font-family: FontAwesome;
+  color: var(--primary);
+}
+.tour-card img {
+  max-height: 210px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
