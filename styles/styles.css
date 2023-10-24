@@ -1,5 +1,5 @@
 header {
-  background-color: gray;
+  background-color: rgba(128, 128, 128);
 }
 .main-nav {
   display: none;
@@ -10,5 +10,65 @@ header {
   font-size: 25px;
   color: white;
   padding: 0.3em 0.6em;
-  border-radius: 5px;
+  border-radius: 2px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  background: gray url(/assets/banner.jpg) no-repeat center / cover;
+  padding: 102px 44px 73px;
+  height: 420px;
+  position: relative;
+  /* z-index: 1; */
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  /* top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+}
+.hero h1 {
+  padding: 6px 18px;
+  margin-bottom: 18px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 3px;
+}
+.hero-text {
+  margin-bottom: 29px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 3.3px;
+}
+.btn {
+  background-color: #ed4933;
+  color: white;
+  border: 1px solid #ed4933;
+  border-radius: 3px;
+  padding: 14px 32px;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.hero-text a {
+  text-decoration: underline;
+}
+.hero > * {
+  z-index: 1;
+}
+.btn:active {
+  outline: 2px solid white;
+  background-color: #f02206;
 }
