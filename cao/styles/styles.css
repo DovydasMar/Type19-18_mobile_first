@@ -1,18 +1,21 @@
 html {
   --primary: #7474db;
+  --primary2: #000;
+  --secondary: #fff;
+  --secondary2: #e4e4e4;
 }
 header {
   display: flex;
   justify-content: space-between;
-  color: var(--primary);
+  color: var(--primary2);
   padding: 0.4em 0.8em;
   align-items: center;
 }
 header > a {
   font-weight: bold;
 }
-header a span {
-  color: black;
+span {
+  color: var(--primary);
 }
 .nav-links {
   display: flex;
@@ -21,4 +24,32 @@ header a span {
 }
 img {
   width: 15px;
+}
+.hero {
+  height: 730px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+}
+.hero p {
+  line-height: 25px;
+  margin-bottom: 30px;
+  width: 95%;
+  text-align: center;
+}
+.hero button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--primary);
+  box-shadow: 2px 2px 5px 5px #6c6ccf;
 }
